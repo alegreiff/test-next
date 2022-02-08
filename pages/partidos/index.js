@@ -1,5 +1,5 @@
-import { Button } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
+import { MenuSuperior } from "../../components/UI/MenuSuperior";
 
 export default function Partidos() {
   const [matches, setMatches] = useState([]);
@@ -16,8 +16,11 @@ export default function Partidos() {
   };
   return (
     <>
+      <div>
+        <MenuSuperior />{" "}
+      </div>
       {matches.map((partido) => (
-        <Button key={partido.match}> {partido.estadio} </Button>
+        <button key={partido.match}> {partido.estadio} </button>
       ))}
     </>
   );
