@@ -10,6 +10,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px crimson solid;
+  border-radius: 18px;
 }
 
 .footer {
